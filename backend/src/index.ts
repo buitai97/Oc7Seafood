@@ -3,6 +3,7 @@ import cors from "cors";
 import "dotenv/config";
 import exp from "constants";
 import mongoose from "mongoose";
+import myUserRoute from "./routes/MyUserRoute";
 
 async function connectToDatabase() {
   try {
@@ -18,9 +19,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get("/test", async (req: Request, res: Response) => {
-  res.json({ message: "hi" });
-});
+app.use("/api/my/user", myUserRoute);
 
 app.listen(3000, () => {
   console.log("server started on http://localhost:3000");
