@@ -12,6 +12,9 @@ const userSchema = new mongoose.Schema({
   name: {
     type: String,
   },
+  addressLine1: {
+    type: String,
+  },
   city: {
     type: String,
   },
@@ -22,3 +25,4 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 export default User;
+  

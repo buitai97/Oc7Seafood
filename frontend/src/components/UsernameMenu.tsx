@@ -24,7 +24,9 @@ const UsernameMenu = () => {
             User Profile
           </Link>
         </DropdownMenuItem>
+
         <Separator />
+        
         <DropdownMenuItem>
           <Button
             onClick={() => logout()}

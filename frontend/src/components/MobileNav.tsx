@@ -29,7 +29,9 @@ const MobileNav = () => {
             <span>Welcome to Oc7Seafood.com!</span>
           )}
         </SheetTitle>
+
         <Separator />
+        
         <SheetDescription className="flex flex-col gap-4">
           {isAuthenticated ? (
             <MobileNavLinks />
